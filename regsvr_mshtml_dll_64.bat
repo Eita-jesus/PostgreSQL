@@ -1,0 +1,1 @@
+regsvr32 c:\windows\SysWOW64\mshtml.dll

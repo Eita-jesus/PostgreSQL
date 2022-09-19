@@ -1,0 +1,1 @@
+regsvr32 c:\windows\System32\mshtml.dll
