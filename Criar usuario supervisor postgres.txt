@@ -1,0 +1,1 @@
+Insert into system.adusystem (NmUsuario,NmCurto,Senha,AlDescontoMax,email) values ('SUPERVISOR','SUPERVISOR','123456','0','')

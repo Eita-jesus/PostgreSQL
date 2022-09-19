@@ -1,0 +1,3 @@
+select * from pg_class order by relname limit 100
+
+delete from pg_class where relnamespace= 'XXXXXX'

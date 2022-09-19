@@ -1,0 +1,15 @@
+- Comando preferencial:
+ 
+ALTER DATABASE NOME_DATABASE SET EMERGENCY
+ALTER DATABASE NOME_DATABASE SET ONLINE
+DBCC checkdb('NOME_DATABASE')
+ 
+ 
+- Comando não recomendado (somente usar em último caso) visto que apaga qualquer tabela danificada, e o cliente poderá perder informações:
+ 
+EXEC sp_resetstatus 'ALTERDATA';
+ALTER DATABASE ALTERDATA SET EMERGENCY
+DBCC checkdb('ALTERDATA')
+ALTER DATABASE ALTERDATA SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+DBCC CheckDB ('ALTERDATA', REPAIR_ALLOW_DATA_LOSS)
+ALTER DATABASE ALTERDATA SET MULTI_USER

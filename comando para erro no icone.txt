@@ -1,0 +1,3 @@
+1º taskkill /IM explorer.exe /F
+2º del “%localappdata%\IconCache.db” /A
+3º start explorer
