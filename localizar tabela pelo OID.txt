@@ -1,0 +1,9 @@
+select * from pg_class where oid=27974;
+
+após localizar o nome da tabela, procurar ela com os comandos abaixo;
+
+delete from pg_class where relname='vhl'
+delete from pg_class where relname='vhl_idxprimario'
+delete from pg_type where typname='vhl'
+delete from pg_class where relname='vhl_id_seq'
+delete from pg_type where typname='vhl_id_seq'
